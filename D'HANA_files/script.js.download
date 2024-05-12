@@ -1,0 +1,12 @@
+document.getElementById("menu").addEventListener("click", function () {
+  document.querySelector(".navbar-nav").classList.toggle("active");
+});
+
+//luar sidebar
+const hamburger = document.querySelector("#menu");
+
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});
